@@ -62,7 +62,7 @@ namespace GTAVWebhook.Types
             if (npc != null && name != null && World.GetDistance(npc.Position, Game.Player.Character.Position) <= 30 && npc.IsOnScreen)
             {
                 PointF pointF = Screen.WorldToScreen(npc.Position, false);
-                new TextElement(name, pointF, (float)0.6, Color.White, GTA.UI.Font.Pricedown, Alignment.Center).Draw();
+                new TextElement(name, pointF, (float)0.6, Color.Blue, GTA.UI.Font.Pricedown, Alignment.Center).Draw();
             }
         }
     }
