@@ -148,7 +148,7 @@ public class GTAVWebhookScript : Script
                 }
             case "explode_vehicle":
                 {
-                    Vehicle[] nearbyVehicles = World.GetNearbyVehicles(Game.Player.Character, 20);
+                    Vehicle[] nearbyVehicles = World.GetNearbyVehicles(Game.Player.Character, 100);
                     foreach (Vehicle vehicle in nearbyVehicles)
                     {
                         vehicle.Explode();
